@@ -14,16 +14,18 @@ asdf plugin add asdf-plugin-manager https://github.com/asdf-community/asdf-plugi
 #asdf plugin update asdf-plugin-manager v1.0.0
 
 ### langs
-asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 asdf plugin-add php https://github.com/asdf-community/asdf-php.git
-asdf plugin add golang https://github.com/asdf-community/asdf-golang.git
+asdf plugin-add java https://github.com/halcyon/asdf-java.git
+asdf plugin-add golang https://github.com/asdf-community/asdf-golang.git
 
-asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
+asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
 asdf plugin-add python
 
 asdf plugin-add zig https://github.com/asdf-community/asdf-zig.git
 asdf plugin-add rust https://github.com/asdf-community/asdf-rust.git
 asdf plugin-add dotnet-core https://github.com/emersonsoares/asdf-dotnet-core.git
+asdf plugin-add gradle
 
 ### runtime
 asdf plugin-add deno https://github.com/asdf-community/asdf-deno.git
@@ -45,7 +47,6 @@ asdf plugin-add terraform-ls https://github.com/asdf-community/asdf-hashicorp.gi
 asdf plugin-add tfc-agent https://github.com/asdf-community/asdf-hashicorp.git
 asdf plugin-add vault https://github.com/asdf-community/asdf-hashicorp.git
 asdf plugin-add waypoint https://github.com/asdf-community/asdf-hashicorp.git
-
 ## install plugins
 # Install specific version
 asdf install asdf-plugin-manager latest
@@ -59,6 +60,7 @@ asdf-plugin-manager version
 
 asdf install nodejs        latest
 asdf install php           latest
+asdf install java          corretto-17.0.5.8.1
 asdf install golang        latest
 
 asdf install ruby          latest
@@ -67,6 +69,7 @@ asdf install python        latest
 asdf install zig           latest
 asdf install rust          latest
 asdf install dotnet-core   latest
+asdf install gradle        latest
 
 asdf install deno          latest
 asdf install flutter       latest
@@ -89,6 +92,7 @@ asdf install waypoint      latest
 
 asdf global nodejs        latest
 asdf global php           latest
+asdf global java          corretto-17.0.5.8.1
 asdf global golang        latest
 
 asdf global ruby          latest
@@ -97,6 +101,7 @@ asdf global python        latest
 asdf global zig           latest
 asdf global rust          latest
 asdf global dotnet-core   latest
+asdf global gradle        latest
 
 asdf global deno          latest
 asdf global flutter       latest
